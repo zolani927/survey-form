@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Public Survey form</h1>
+    <p id="description">
+      We collect prefences on streaming services(Netflix, Prime, Youtube),
+      preferred movies/tv genres, and how many hours of content they watch per
+      week.
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input required id="name" type="text" placeholder="Enter your Name" />
+      <label id="email-label" for="email">Email</label>
+      <input required id="email" type="email" placeholder="Enter your Email" />
+      <label id="number-label" for="number">Hours Wached Per Week</label>
+      <input
+        id="number"
+        type="number"
+        placeholder="enter hours per week"
+        min="3"
+        max="100"
+      />
+      <label for="dropdown">Favourite streaming services</label>
+      <select id="dropdown">
+        <option value="">Select an option</option>
+        <option value="netflix">Netflix</option>
+        <option value="prime">Prime</option>
+        <option value="youtube">YouTube</option>
+      </select>
+      <p>Would you recommend this platform?</p>
+      <label
+        ><input
+          type="radio"
+          name="recommend"
+          value="definitely"
+        />Definitely</label
+      >
+      <label><input type="radio" name="recommend" value="maybe" />Maybe</label>
+      <label><input type="radio" name="recommend" value="never" />Never</label>
+      <p>What Genre do you watch? (check all that apply)</p>
+      <label><input type="checkbox" name="genre" value="action" />Action</label>
+      <label><input type="checkbox" name="genre" value="comedy" />Comedy</label>
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea
+        id="comments"
+        placeholder="Enter your comments here..."
+      ></textarea>
+      <label>Would you recommend publisher to a friend?</label>
+      <label><input type="radio" name="recommend" value="yes" />yes</label>
+      <label><input type="radio" name="recommend" value="no" />no</label>
+      <label><input type="radio" name="recommend" value="maybe" />maybe</label>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
